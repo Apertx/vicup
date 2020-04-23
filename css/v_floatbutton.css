@@ -1,0 +1,14 @@
+.button_call {
+  position: fixed;
+  bottom: 16x;
+  right: 16px;
+  background: #2db700;
+  border-radius: 50%;
+  display: block;
+  padding: 8px;
+  z-index: 9999px;
+}
+
+.button_call:hover {
+  background: #222;
+}
