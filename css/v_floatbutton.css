@@ -6,7 +6,6 @@
   border-radius: 50%;
   display: block;
   padding: 8px;
-  z-index: 9999px;
 }
 
 .button_call:hover {
