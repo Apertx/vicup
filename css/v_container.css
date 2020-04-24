@@ -2,3 +2,13 @@
 body {
   padding-top: 5rem;
 }
+
+/*Тэг для домашних карточек*/
+.home_card {
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+	padding: 10px 15px;
+	font-size: 18px;
+	line-height: 24px;
+}
