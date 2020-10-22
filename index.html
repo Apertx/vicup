@@ -6,15 +6,13 @@
     <meta name="description" content="Срочный выкуп квартир, комнат, долей. Выкуп ипотечной недвижимости. Оплата долгов, приватизация с задолженностью. СПб" />
     <meta name="keywords" content="Срочный выкуп недвижимости, быстрая продажа, выкуп кварплата долги приватизация с долгами квартиры комнаты" />
     <meta name="robots" content="all"/>
-    <link rel="icon" href="icon/favicon.ico">
+    <link rel="icon" href="image/favicon.ico">
     <title>Срочный выкуп квартир и комнат</title>
 
     <!--Bootstrap файл стилей-->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!--Файл стилей для главного контейнера-->
-    <link href="css/v_container.css" rel="stylesheet">
-    <!--Файл стилей для плавающей кнопки-->
-    <link href="css/v_floatbutton.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
 
   <body>
@@ -78,30 +76,30 @@
         <!--Первый ряд карточек-->
         <div class="row">
           <div class="card col-md m-1 bg-dark">
-            <img src="icon/kvart.jpg" class="card-img-top" alt="Выкуп квартир">
+            <img src="image/kvart.jpg" class="card-img-top" alt="Выкуп квартир">
             <a href="#" class="btn home_card text-dark" style="background-color: rgba(108,203,103,.9);">Выкуп квартир</a>
           </div>
           <div class="card col-md m-1 bg-dark">
-            <img src="icon/komn.jpg" class="card-img-top" alt="Срочный выкуп комнат">
+            <img src="image/komn.jpg" class="card-img-top" alt="Срочный выкуп комнат">
             <a href="#" class="btn home_card text-light" style="background-color: rgba(100,132,203,.9);">Срочный выкуп комнат</a>
           </div>
           <div class="card col-md m-1 bg-dark">
-            <img src="icon/doli.jpg" class="card-img-top" alt="Выкуп долей">
+            <img src="image/doli.jpg" class="card-img-top" alt="Выкуп долей">
             <a href="#" class="btn home_card text-dark" style="background-color: rgba(107,190,181,.9);">Выкуп долей</a>
           </div>
         </div>
         <!--Второй ряд карточек-->
         <div class="row">
           <div class="card col-md m-1 bg-dark">
-            <img src="icon/sup.jpg" class="card-img-top" alt="Покупка коммерческих помещений">
+            <img src="image/sup.jpg" class="card-img-top" alt="Покупка коммерческих помещений">
             <a href="#" class="btn home_card text-light" style="background-color: rgba(190,68,42,.9);">Покупка коммерческих помещений</a>
           </div>
           <div class="card col-md m-1 bg-dark">
-            <img src="icon/zem.jpg" class="card-img-top" alt="Выкуп загородной недвижимости">
+            <img src="image/zem.jpg" class="card-img-top" alt="Выкуп загородной недвижимости">
             <a href="#" class="btn home_card text-dark" style="background-color: rgba(214,199,30,.9);">Выкуп загородной недвижимости</a>
           </div>
           <div class="card col-md m-1 bg-dark">
-            <img src="icon/cred.jpg" class="card-img-top" alt="Кредиты под залог">
+            <img src="image/cred.jpg" class="card-img-top" alt="Кредиты под залог">
             <a href="#" class="btn home_card text-light" style="background-color: rgba(108,203,103,.9);">Кредиты под залог</a>
           </div>
         </div>
@@ -118,10 +116,13 @@
     </main>
 
     <!--Плавающая кнопка-->
-    <a href="tel:+79643420082"><div class="button_call"><img src="icon/call.png"></div></a>
+    <div class="dial-circle"></div>
+    <div class="dial-pulse"></div>
+    <a href="javascript:showCall();"><div class="dial-float"></div></a>
 
     <!--jQuery и Bootstrap скрипт-файлы-->
     <script src="js/jquery-3.4.1.slim.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/ooono.js"></script>
   </body>
 </html>

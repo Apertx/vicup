@@ -23,10 +23,11 @@ body {
   position: relative;
 }
 
-.seperator:after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 0px;
-  border-top: 1px solid #1eaea1;
-}
+.dial-float{background-color:#60C080;box-sizing:content-box;width:72px;height:72px;bottom:56px;right:56px;position:fixed;border-radius:100%;background-image:url(../image/call.png);background-position:center;background-repeat:no-repeat;animation-name:dial-toss;animation-duration:1.5s;animation-iteration-count:infinite;opacity:.9;}
+.dial-float:hover{opacity:1;}
+.dial-pulse{background-color:#60C080;width:100px;height:100px;bottom:42px;right:42px;position:fixed;border-radius:100%;animation:circle-fill-anim 2.3s infinite ease-in-out;transition: all 0.5s;}
+.dial-circle{border:2px solid #60C080;width:148px;height:148px;bottom:16px;right:16px;position:fixed;border-radius:100%;opacity:.5;animation:circle-anim 2.4s infinite ease-in-out !important;transition:all 0.5s;}
+@keyframes dial-toss{0%{transform:rotate(-8deg);}50%{transform:rotate(8deg);}100%{transform:rotate(-8deg);}}
+@keyframes circle-anim{0%{transform:rotate(0deg) scale(0.5) skew(1deg);opacity:.1;}30%{transform:rotate(0deg) scale(0.7) skew(1deg);opacity:.5;}100%{transform:rotate(0deg) scale(1) skew(1deg);opacity:.1;}}
+@keyframes circle-fill-anim{0%{transform:rotate(0deg) scale(0.7) skew(1deg);opacity:.2;}50%{transform:rotate(0deg) scale(1) skew(1deg);opacity:.2;}100%{transform:rotate(0deg) scale(0.7) skew(1deg);opacity:.2;}}
+.call-float{background-color:#60C080;box-sizing:content-box;width:64px;height:64px;bottom:144px;right:60px;position:fixed;border-radius:100%;background-image:url(../image/call.png);background-position:center;background-repeat:no-repeat;}
