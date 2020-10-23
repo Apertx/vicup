@@ -23,27 +23,39 @@ body {
   box-sizing:content-box;
   width:72px;
   height:72px;
-  bottom:56px;
-  right:56px;
+  bottom:38px;
+  right:38px;
   position:fixed;
   border-radius:100%;
   background-image:url(../image/call.png);
   background-position:center;
   background-repeat:no-repeat;
-  animation-name:dial-toss;
-  animation-duration:1.5s;
-  animation-iteration-count:infinite;
+  animation:dial-toss 1.5s infinite;
   opacity:.9;
 }
 .dial-float:hover{
   opacity:1;
 }
+.dial-done{
+  background-color:#60C080;
+  box-sizing:content-box;
+  width:72px;
+  height:72px;
+  bottom:38px;
+  right:38px;
+  position:fixed;
+  border-radius:100%;
+  background-image:url(../image/done.png);
+  background-position:center;
+  background-repeat:no-repeat;
+  animation:done-fade 1.5s 1 ease-in-out;
+}
 .dial-pulse{
   background-color:#60C080;
   width:100px;
   height:100px;
-  bottom:42px;
-  right:42px;
+  bottom:24px;
+  right:24px;
   position:fixed;
   border-radius:100%;
   animation:circle-fill-anim 2.3s infinite ease-in-out;
@@ -53,8 +65,8 @@ body {
   border:2px solid #60C080;
   width:148px;
   height:148px;
-  bottom:16px;
-  right:16px;
+  bottom:0px;
+  right:0px;
   position:fixed;
   border-radius:100%;
   opacity:.5;
@@ -75,15 +87,62 @@ body {
   50%{transform:rotate(0deg) scale(1) skew(1deg);opacity:.2;}
   100%{transform:rotate(0deg) scale(0.7) skew(1deg);opacity:.2;}
 }
-.call-float{
+.clear-float{
   background-color:#60C080;
   box-sizing:content-box;
+  width:72px;
+  height:72px;
+  bottom:38px;
+  right:38px;
+  position:fixed;
+  border-radius:100%;
+  background-image:url(../image/clear.png);
+  background-position:center;
+  background-repeat:no-repeat;
+}
+.call-float{
+  background-color:#308040;
+  box-sizing:content-box;
   width:64px;height:64px;
-  bottom:144px;
-  right:60px;
+  bottom:128px;
+  right:42px;
   position:fixed;
   border-radius:100%;
   background-image:url(../image/call.png);
   background-position:center;
   background-repeat:no-repeat;
+  animation:call-move 0.3s 1 ease-in-out;
+  opacity:.9;
+}
+.call-float:hover{
+  opacity:1;
+}
+.email-float{
+  background-color:#308040;
+  box-sizing:content-box;
+  width:64px;height:64px;
+  bottom:200px;
+  right:42px;
+  position:fixed;
+  border-radius:100%;
+  background-image:url(../image/email.png);
+  background-position:center;
+  background-repeat:no-repeat;
+  animation:email-move 0.3s 1 ease-in-out;
+  opacity:.9;
+}
+.email-float:hover{
+  opacity:1;
+}
+@keyframes call-move{
+  0%{transform:translateY(90px);}
+  100%{transform:translateY(0px);}
+}
+@keyframes email-move{
+  0%{transform:translateY(162px);}
+  100%{transform:translateY(0px);}
+}
+@keyframes done-fade{
+  50%{opacity:1;}
+  100%{opacity:0;}
 }

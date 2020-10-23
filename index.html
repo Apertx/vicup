@@ -117,9 +117,46 @@
 
     <!--Плавающая кнопка-->
     <div id="callHere">
-      <a href="javascript:showCall();"><div class="dial-float"></div></a>
       <div class="dial-circle"></div>
       <div class="dial-pulse"></div>
+      <a href="javascript:showCall();"><div class="dial-float"></div></a>
+    </div>
+    <div class="modal" tabindex="-1" role="dialog" id="modalMail">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Отправьте нам сообщение</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text">Имя и Фамилия</span>
+              </div>
+              <input type="text" aria-label="First name" class="form-control">
+              <input type="text" aria-label="Last name" class="form-control">
+            </div>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text">Телефон</span>
+              </div>
+              <input type="text" class="form-control" aria-label="Телефон" aria-describedby="inputGroup-sizing-default">
+            </div>
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text">Сообщение</span>
+              </div>
+              <textarea class="form-control" aria-label="Сообщение"></textarea>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Отмена</button>
+            <button type="button" class="btn btn-success" data-dismiss="modal" onclick="javascript:closeCall();">Отправить</button>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!--jQuery и Bootstrap скрипт-файлы-->
