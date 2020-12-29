@@ -1,0 +1,128 @@
+.dial-float{
+  background-color:#60C080;
+  box-sizing:content-box;
+  width:72px;
+  height:72px;
+  bottom:38px;
+  right:38px;
+  position:fixed;
+  border-radius:100%;
+  background-image:url(../image/call.png);
+  background-position:center;
+  background-repeat:no-repeat;
+  animation:dial-toss 1.5s infinite;
+  opacity:.9;
+}
+.dial-float:hover{
+  opacity:1;
+}
+.dial-done{
+  background-color:#60C080;
+  box-sizing:content-box;
+  width:72px;
+  height:72px;
+  bottom:38px;
+  right:38px;
+  position:fixed;
+  border-radius:100%;
+  background-image:url(../image/done.png);
+  background-position:center;
+  background-repeat:no-repeat;
+  animation:done-fade 1.5s 1 ease-in-out;
+}
+.dial-pulse{
+  background-color:#60C080;
+  width:100px;
+  height:100px;
+  bottom:24px;
+  right:24px;
+  position:fixed;
+  border-radius:100%;
+  animation:circle-fill-anim 2.3s infinite ease-in-out;
+  transition: all 0.5s;
+}
+.dial-circle{
+  border:2px solid #60C080;
+  width:148px;
+  height:148px;
+  bottom:0px;
+  right:0px;
+  position:fixed;
+  border-radius:100%;
+  opacity:.5;
+  animation:circle-anim 2.4s infinite ease-in-out !important;
+  transition:all 0.5s;}
+@keyframes dial-toss{
+  0%{transform:rotate(-8deg);}
+  50%{transform:rotate(8deg);}
+  100%{transform:rotate(-8deg);}
+}
+@keyframes circle-anim{
+  0%{transform:rotate(0deg) scale(0.5) skew(1deg);opacity:.1;}
+  30%{transform:rotate(0deg) scale(0.7) skew(1deg);opacity:.5;}
+  100%{transform:rotate(0deg) scale(1) skew(1deg);opacity:.1;}
+}
+@keyframes circle-fill-anim{
+  0%{transform:rotate(0deg) scale(0.7) skew(1deg);opacity:.2;}
+  50%{transform:rotate(0deg) scale(1) skew(1deg);opacity:.2;}
+  100%{transform:rotate(0deg) scale(0.7) skew(1deg);opacity:.2;}
+}
+.clear-float{
+  background-color:#60C080;
+  box-sizing:content-box;
+  width:72px;
+  height:72px;
+  bottom:38px;
+  right:38px;
+  position:fixed;
+  border-radius:100%;
+  background-image:url(../image/clear.png);
+  background-position:center;
+  background-repeat:no-repeat;
+}
+.call-float{
+  background-color:#308040;
+  box-sizing:content-box;
+  width:64px;height:64px;
+  bottom:128px;
+  right:42px;
+  position:fixed;
+  border-radius:100%;
+  background-image:url(../image/call.png);
+  background-position:center;
+  background-repeat:no-repeat;
+  animation:call-move 0.15s 1 ease-in-out;
+  opacity:.9;
+}
+.call-float:hover{
+  opacity:1;
+}
+.email-float{
+  background-color:#308040;
+  box-sizing:content-box;
+  width:64px;height:64px;
+  bottom:200px;
+  right:42px;
+  position:fixed;
+  border-radius:100%;
+  background-image:url(../image/email.png);
+  background-position:center;
+  background-repeat:no-repeat;
+  animation:email-move 0.2s 1 ease-in-out;
+  opacity:.9;
+}
+.email-float:hover{
+  opacity:1;
+}
+@keyframes call-move{
+  0%{transform:translateY(90px);}
+  100%{transform:translateY(0px);}
+}
+@keyframes email-move{
+  0%{transform:translateY(162px);}
+  100%{transform:translateY(0px);}
+}
+@keyframes done-fade{
+  50%{opacity:1;}
+  100%{opacity:0;}
+}
